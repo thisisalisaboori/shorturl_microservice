@@ -1,0 +1,23 @@
+syntax = "proto3";
+option go_package = "shorturl";
+
+
+message CreateRequest {
+  string url = 1;
+}
+
+message GetLink {
+    string url = 1;
+}
+  
+message Response {
+    string url = 1;
+    string shorturl = 2;
+}
+
+
+service ShortLink {
+    
+    rpc Create (CreateRequest) returns (Response) {}
+    rpc Get (GetLink) returns (Response) {}
+}
