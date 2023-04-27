@@ -22,7 +22,7 @@ type LinkContext struct {
 
 func (T *LinkContext) Init() error {
 	var err error
-	T.LDB, err = leveldb.OpenFile("/home/ali/links", nil)
+	T.LDB, err = leveldb.OpenFile("/tmp/links", nil)
 	return err
 }
 
