@@ -1,0 +1,4 @@
+simple microservice with
+Asp.net 7 and golang
+in this sample i used grpc for comminutionbetween services
+each service deploy in seprator docker container
